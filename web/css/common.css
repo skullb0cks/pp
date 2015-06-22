@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,blockquote,iframe { margin:0; padding:0; }
+body { background:#fff; color:#666; font-family:Dotum,Verdana,Arial,Sans-Serif; font-size:12px; line-height:1.3 }
+img	{ border:0px; vertical-align:middle; }
+a { color:#333333; text-decoration:none; } a:visited, a:active { text-decoration:none; }	a:hover { text-decoration:underline; }
+input, select	{ font-size:100%; vertical-align:middle; }
+textarea, input[type=text] { outline:none; }
+ol,ul,li { list-style:none; } fieldset, blockquote { border:none; }
+i,em,u,cite	{ font-style:normal; }
+h1,h2,h3,h4,h5	{ font:bold 12px Dotum,Verdana,Arial,Sans-Serif; }
+legend,caption	{ display:none;clear:both;font:bold 12px Dotum,Verdana,Arial,Sans-Serif; }
+hr	{ display:none; clear:both; }
+#espresso_editor_view hr { display:block; }
+table	{ table-layout:fixed; border-collapse:collapse; }
+th,td	{ border-collapse:collapse; }
+
+input[type="button"], input[type="text"], input[type="image"], textarea {-webkit-appearance:none;-webkit-border-radius:0;}

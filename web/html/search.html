@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <title>검색</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/search.css">
+</head>
+
+<body>
+<!-- search -->
+<div class="wrap_search">
+    <div class="search">
+        <div class="input_box">
+            <label><input type="text" value="홈스타파스텔OK플러스" /></label>
+            <button type="button">검색</button>
+        </div>
+        <div class="input_opts">
+            <div class="check_res"><label><input type="checkbox" /> 결과내 재검색</label></div>
+            <p class="text_res">
+                <em>총 <strong>10건</strong></em> 검색결과가 있습니다
+            </p>
+        </div>
+    </div>
+</div>
+<div class="wrap_search_word">
+    <div class="search_word">
+        <dl class="my_search">
+            <dt>나의 검색어</dt>
+            <dd class="word_list">
+                <span class="rbox">
+                    <a href="#">일이삼사오</a>
+                    <a href="#" class="del">삭제</a>
+                </span>
+                <span class="rbox">
+                    <a href="#">일이삼사오육칠팔구십</a>
+                    <a href="#" class="del">삭제</a>
+                </span>
+            </dd>
+        </dl>
+        <ul class="rank">
+            <li>
+                <span class="rankbox">
+                    <span class="number">1</span>
+                    <a href="#" class="text">일이삼사오</a>
+                    <span class="ico_new">new</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- //search -->
+
+<!-- detail category -->
+<!-- //detail category -->
+
+<style>
+    .wrap_list{width:1200px;margin:0 auto;}
+    .blist_sort {float:left;width:1200px; height:50px; background-color:#fff; border-top:3px solid #444; border-bottom:1px solid #e3e3e3; margin-top:100px;}
+    .blist_sort ul li {float:left; margin:5px 0 0 10px;}
+    .item_sort {overflow:hidden;position:relative;float:left;width:1200px; height:38px; background-color:#f5f5f5; border-bottom:1px solid #e3e3e3; margin-top:0px;}
+    .item_sort ul li {float:left;padding:0 20px;line-height:38px; font-size:11px;background:url('../img/search/bg_bar1.png') right no-repeat;}
+    .item_sort ul li.on a{color:#db0f0e;}
+    .item_sort ul li a {color:#666}
+    .separator {color:#e3e3e3}
+    .SchTtl {font-size:12px; color:#000; margin:0 10px 0 0 }
+    .PlistSch .Schwdw { margin:6px 10px 0 0; width:180px; height:25px; border:1px solid #e3e3e3; background-color:#fff; }
+    .PlistSch .Schwdw span {float:right; text-align:right; line-height:27px; padding-right:10px; color:#00aaaa }
+    .PlistSltBox { float:left;width:130px; height:24px; border:none; padding-left:5px; outline:none;}
+    .Sltarr {position:absolute; margin-top:3px}
+    .Sltarr img {margin:34px 0 0 30px;}
+    .select_sort {float:left; margin:0 15px 0 0 }
+    .blist_sort select {width:150px; height:20px; background:transparent; border:0px; font-size:12px; color:#7b7b7b;  margin:10px 0 0 0; background:url('../img/search/bg_arw_b.png') right no-repeat; background-size:6px 3px; -webkit-appearance:none; appearnace:none;  }
+    .sub_sort {float:left; margin:6px 10px 0 0}
+
+    .b_category li{float:left;line-height:39px;overflow:hidden;font-size:15px;}
+    .b_category li a{display:block;width:85px;text-align:center;color:#b5b5b5}
+    .b_category li em{font-size:11px;color:#878787;}
+    .b_category li.on a{color:#222;}
+    .b_category li.on em{color:#dc1212;}
+
+    .blist_sort .options{float:right;}
+    .paging{clear:both;text-align:center;}
+    .paging a{display:inline-block;margin:25px 0;width:22px;line-height:22px;border:1px solid #b2b2b2;color:#a9a9a9;text-align:center;vertical-align:middle;}
+    .paging a.on{color:#fff;background-color:#fe4701;}
+    .paging a.first,
+    .paging a.prev,
+    .paging a.next,
+    .paging a.last{background-color:#aaa;width:24px;height:24px;font-size:0;border:none;}
+
+
+</style>
+
+<div class="wrap_list">
+    <div class="blist_sort">
+        <!-- 디자인이 없어 텍스트로 변경-->
+        <ul class="b_category">
+            <li class="on"><a href="#">All <em>(59)</em></a></li>
+            <li><a href="#">Sale <em>(10)</em></a></li>
+            <li><a href="#">Free <em>(5)</em></a></li>
+        </ul>
+        <!-- //디자인이 없어 텍스트로 변경-->
+        <div class="options">
+            <ul class="select_sort">
+                <li>
+                    <select>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option>4줄씩보기</option>
+                        <option>4줄씩보기</option>
+                        <option>4줄씩보기</option>
+                        <option>4줄씩보기</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="sub_sort">
+                <li><a href=""><img src="http://www.paintinfo.co.kr/ishop/img/cate/Sort_on_ico1.png" alt="" /></a></li>
+                <li><a href="http://www.paintinfo.co.kr/ishop/infoEtc/renew/cate3.html"><img src="http://www.paintinfo.co.kr/ishop/img/cate/Sort_off_ico2.png" onmouseover="this.src='http://www.paintinfo.co.kr/ishop/img/cate/Sort_on_ico2.png';" onmouseout="this.src='http://www.paintinfo.co.kr/ishop/img/cate/Sort_off_ico2.png';" alt="sortIco" /></a></li>
+                <!--<a href=""><li><img src="http://www.paintinfo.co.kr/ishop/img/cate/Sort_off_ico3.png" onmouseover="this.src='/ishop/img/cate/Sort_on_ico3.png';" onmouseout="this.src='http://www.paintinfo.co.kr/ishop/img/cate/Sort_off_ico3.png';" alt="sortIco" /></li></a>-->
+            </ul>
+        </div>
+    </div>
+    <div class="item_sort">
+        <ul>
+            <li class="on"><a href="#">누적판매량순</a></li>
+            <li><a href="#">신상품순</a></li>
+            <li><a href="#">인기도순</a></li>
+            <li><a href="#">낮은가격순</a></li>
+            <li><a href="#">할인율순</a></li>
+            <li><a href="#">최근판매량순</a></li>
+        </ul>
+    </div>
+    <div class="paging">
+        <a href="#" class="first">처음</a>
+        <a href="#" class="prev">이전</a>
+        <a href="#" class="on">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#" class="next">다음</a>
+        <a href="#" class="last">마지막</a>
+    </div>
+    <div class="group_items">
+        <ul class="item_list">
+            <li class="first">
+                <a href="#"><img src="../img/search/@tmp.png" alt="" /></a>
+                <div class="options">
+                    <a href="#" class="blank">새창보기</a>
+                    <a href="#">담기</a>
+                    <a href="#" class="review">리뷰</a>
+                    <a href="#" class="preview">미리보기</a>
+                </div>
+                <div class="box">
+                    <a href="#" class="detail">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                    <p class="price"><strike>5,000원</strike></p>
+                    <p class="sale">25,000원 <em>[20%]</em></p>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="../img/search/@tmp.png" alt="" /></a>
+                <div class="options">
+                    <a href="#" class="blank">새창보기</a>
+                    <a href="#">담기</a>
+                    <a href="#" class="review">리뷰</a>
+                    <a href="#" class="preview">미리보기</a>
+                </div>
+                <div class="box">
+                    <a href="#" class="detail">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                    <p class="price"><strike>5,000원</strike></p>
+                    <p class="sale">25,000원 <em>[20%]</em></p>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="../img/search/@tmp.png" alt="" /></a>
+                <div class="options">
+                    <a href="#" class="blank">새창보기</a>
+                    <a href="#">담기</a>
+                    <a href="#" class="review">리뷰</a>
+                    <a href="#" class="preview">미리보기</a>
+                </div>
+                <div class="box">
+                    <a href="#" class="detail">일이삼사오육칠팔구십</a>
+                    <p class="price"></p>
+                    <p class="sale">25,000원</p>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="../img/search/@tmp.png" alt="" /></a>
+                <div class="options">
+                    <a href="#" class="blank">새창보기</a>
+                    <a href="#">담기</a>
+                    <a href="#" class="review">리뷰</a>
+                    <a href="#" class="preview">미리보기</a>
+                </div>
+                <div class="box">
+                    <a href="#" class="detail">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                    <p class="price"></p>
+                    <p class="sale">25,000원 <em>[20%]</em></p>
+                </div>
+            </li>
+        </ul>
+        <ul class="item_list">
+            <li class="first">
+                <a href="#"><img src="../img/search/@tmp.png" alt="" /></a>
+                <div class="options">
+                    <a href="#" class="blank">새창보기</a>
+                    <a href="#">담기</a>
+                    <a href="#" class="review">리뷰</a>
+                    <a href="#" class="preview">미리보기</a>
+                </div>
+                <div class="box">
+                    <a href="#" class="detail">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                    <p class="price"><strike>5,000원</strike></p>
+                    <p class="sale">25,000원 <em>[20%]</em></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<style>
+    .group_items{margin-top:-40px;}
+    .item_list{width:100%;overflow:hidden;border-bottom:1px solid #e5e5e5;margin-top:40px;}
+    .item_list li{float:left;width:210px;font-size:11px;padding-bottom:35px;margin-left:37px;}
+    .item_list li.first{margin-left:0;}
+    .item_list .options{margin-top:24px;}
+    .item_list .options a.blank{color:#000;}
+    .item_list .options a.review{background:none;}
+    .item_list .options a.preview{position:absolute;top:0;right:0;width:30px;height:30px;text-indent:-9999px;padding:0;display:block;background:url(../img/search/bg_preview.png) no-repeat;}
+    .item_list .options{position:relative;line-height:30px;background-color:#f5f5f5;color:#888;}
+    .item_list .options a{padding:0 10px;background:url(../img/search/bg_bar2.png) right no-repeat;color:#888;}
+    .item_list .box{padding:10px;color:#8d8d8d;}
+    .item_list .detail{display:inline-block;height:60px;line-height:15px;color:#8d8d8d;}
+    .item_list .price{height:15px;}
+    .item_list .sale{font-weight:bold;color:#000;}
+    .item_list .sale em{color:#dc1210;}
+
+</style>
+</body>
+</html>
