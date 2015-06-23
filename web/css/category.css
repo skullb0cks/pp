@@ -1,0 +1,15 @@
+.wrap_detail{width:1200px;margin:85px auto 0;}
+.tab_menu{overflow:hidden;padding-left:25px;}
+.tab_menu li{float:left;width:115px;font-weight:bold;text-align:center;}
+.tab_menu li.on a{color:#fcff00;background-color:#666;}
+.tab_menu li a{display:block;width:115px;line-height:40px;color:#909090;background-color:#e3e3e3;}
+.detail_category{float:left;border:1px solid #ccc;}
+.detail_category .title{height:45px;line-height:45px;padding-left:25px;font-weight:bold;color:#000;background-color:#f5f5f5;}
+.detail_category .title em{font-weight:normal;font-size:11px;}
+.top_category{position:relative;padding-left:25px;}
+.top_category li:hover{text-decoration:underline;}
+.top_category li.top_item{float:left;width:190px;height:60px;line-height:60px;}
+.top_category li.top_item .number{color:#00aaaa;font-size:11px;}
+.mid_category{position:absolute;left:15px;z-index:100;width:1160px;background-color:#444;padding-left:10px;}
+.mid_category li.mid_item{float:left;width:190px;height:60px;line-height:60px;color:#fff;font-size:11px;}
+li.top_item .mid_category li.mid_item .number{font-size:11px;color:#fff;}
