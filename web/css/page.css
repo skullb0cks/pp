@@ -1,0 +1,7 @@
+.paging{clear:both;text-align:center;}
+.paging a{display:inline-block;margin:25px 0;width:22px;line-height:22px;border:1px solid #b2b2b2;color:#a9a9a9;text-align:center;vertical-align:middle;}
+.paging a.on{color:#fff;background-color:#fe4701;}
+.paging a.first,
+.paging a.prev,
+.paging a.next,
+.paging a.last{background-color:#aaa;width:24px;height:24px;font-size:0;border:none;}
