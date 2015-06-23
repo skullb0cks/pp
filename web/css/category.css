@@ -1,6 +1,6 @@
 .wrap_detail{width:1200px;margin:85px auto 0;}
 .tab_menu{overflow:hidden;padding-left:25px;}
-.tab_menu li{float:left;width:115px;font-weight:bold;text-align:center;}
+.tab_menu li{float:left;width:115px;font-weight:bold;text-align:center;margin-right:1px;}
 .tab_menu li.on a{color:#fcff00;background-color:#666;}
 .tab_menu li a{display:block;width:115px;line-height:40px;color:#909090;background-color:#e3e3e3;}
 .detail_category{float:left;border:1px solid #ccc;}
