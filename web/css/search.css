@@ -1,0 +1,26 @@
+.wrap_search{background-color:#fafafa;padding-bottom:25px;}
+.search{width:760px;margin:0 auto;padding-top:54px;}
+.search .input_box{position:relative;overflow:hidden;padding-bottom:5px;border-bottom:5px solid #dd1111;}
+.search .input_box input{border:none;width:500px;height:30px;font-size:15px;background-color:transparent;color:#000;padding:5px 0 0 10px;}
+.search .input_box button{position:absolute;top:0;right:13px;width:32px;height:32px;border:none;text-indent:-9999px;background:url(../img/search/btn_search.png) no-repeat;}
+.input_opts{position:relative;color:#000;padding:0 5px;margin-top:20px;}
+.input_opts .check_res{color:#000;font-size:11px;}
+.input_opts .text_res{position:absolute;top:0;right:15px;color:#000;}
+.input_opts .text_res em{color:#dd1111;}
+.wrap_search_word{border-bottom:1px solid #e5e5e5;}
+.search_word{width:760px;margin:0 auto;overflow:hidden;}
+.search_word .rank{float:right;}
+.my_search{float:left;padding:15px 15px;width:500px;color:#000;}
+.my_search dt{float:left;background:url(../img/search/bul_arw.png) 0 3px no-repeat;font-weight:bold;margin-top:5px;padding:0 10px 0 7px;color:#000;}
+.my_search dd{float:left;}
+.rbox{display:inline-block;padding:0 10px;border-radius:10px;line-height:23px;background-color:#e5e5e5;color:#666;}
+.rbox .del{width:13px;height:13px;display:inline-block;vertical-align:middle;text-indent:-9999px;background:url(../img/search/btn_del.png) no-repeat;}
+.rank{padding-top:5px;}
+.rankbox{position:relative;display:inline-block;width:200px;line-height:37px;background-color:#f5f5f5;border-radius:20px;}
+.rankbox .text{padding-left:42px;}
+.rankbox .number{position:absolute;top:6px;left:6px;display:inline-block;width:25px;line-height:25px;text-align:center;border-radius:20px;background-color:#dd1111;color:#fff;}
+.rank .ico_new{position:absolute;top:14px;right:10px;}
+.ico_new{display:inline-block;width:25px;height:7px;text-indent:-9999px;background:url(../img/search/ico_new.png) no-repeat;}
+
+.wrap_list{width:1200px;margin:0 auto;}
+.group_items{margin-top:-40px;}
