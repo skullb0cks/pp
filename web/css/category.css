@@ -9,6 +9,8 @@
 .top_category{position:relative;padding-left:25px;}
 .top_category li:hover{text-decoration:underline;}
 .top_category li.top_item{float:left;width:190px;height:60px;line-height:60px;}
+.top_category li.top_item.on{background:url(../img/category/bg_arw_t.png) 40px bottom no-repeat;}
+.top_category li.top_item.on .mid_category{display:block;}
 .top_category li.top_item .number{color:#00aaaa;font-size:11px;}
 .mid_category{position:absolute;left:15px;z-index:100;width:1160px;background-color:#444;padding-left:10px;}
 .mid_category li.mid_item{float:left;width:190px;height:60px;line-height:60px;color:#fff;font-size:11px;}

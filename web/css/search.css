@@ -20,7 +20,7 @@
 .rankbox .text{padding-left:42px;}
 .rankbox .number{position:absolute;top:6px;left:6px;display:inline-block;width:25px;line-height:25px;text-align:center;border-radius:20px;background-color:#dd1111;color:#fff;}
 .rank .ico_new{position:absolute;top:14px;right:10px;}
-.ico_new{display:inline-block;width:25px;height:7px;text-indent:-9999px;background:url(../img/search/ico_new.png) no-repeat;}
+.ico_new{display:inline-block;width:25px;height:7px;text-indent:-9999px;background:url(../img/common/ico_new.png) no-repeat;}
 
 .wrap_list{width:1200px;margin:0 auto;}
 .group_items{margin-top:-40px;}

@@ -4,4 +4,8 @@
 .paging a.first,
 .paging a.prev,
 .paging a.next,
-.paging a.last{background-color:#aaa;width:24px;height:24px;font-size:0;border:none;}
+.paging a.last{width:24px;height:24px;font-size:0;border:none;}
+.paging a.first{background:#aaa url(../img/common/bg_prev_t.png) center no-repeat;}
+.paging a.prev{background:#aaa url(../img/common/bg_prev.png) center no-repeat;}
+.paging a.next{background:#aaa url(../img/common/bg_next.png) center no-repeat;}
+.paging a.last{background:#aaa url(../img/common/bg_next_t.png) center no-repeat;}
