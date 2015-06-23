@@ -44,3 +44,21 @@
 .sub_sort a.s_list{background:url(../img/list/sort_list.png) no-repeat;}
 .sub_sort a.s_list:hover,
 .sub_sort li.on a.s_list{background:url(../img/list/sort_list_on.png) no-repeat;}
+
+.group_product_number{border:1px solid #ccc;}
+.group_product_number .text{height:45px;line-height:45px;background-color:#f5f5f5;color:#000;padding:0 25px;}
+.group_product_number .text em{font-weight:bold;}
+.group_product_number .item_list{margin-top:7px;}
+.item_number{padding-bottom:20px;}
+.item_number li{width:200px;height:294px;border-left:1px solid #e5e5e5;padding:0 17px;margin:0;}
+.item_number li.first{border:none;padding-left:30px;}
+.item_number .options a{padding:0 6px;}
+.item_number .options a.sales{background:none;}
+.item_number .detail{height:30px;}
+.item_number .options{margin-top:9px;}
+.item_number .on{display:block;border:3px solid #ff4800;}
+
+.query_text{color:#000;text-align:center;margin:170px 0;}
+.query_text .top{font-size:22px;font-weight:bold;padding-bottom:32px;}
+.query_text em{color:#dd1111;}
+.query_text .sub{line-height:20px;}

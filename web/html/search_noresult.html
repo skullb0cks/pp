@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <title>검색</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/search.css">
+    <link rel="stylesheet" type="text/css" href="../css/list.css">
+    <link rel="stylesheet" type="text/css" href="../css/page.css">
+    <link rel="stylesheet" type="text/css" href="../css/category.css">
+</head>
+
+<body>
+<!-- search -->
+<div class="wrap_search">
+    <div class="search">
+        <div class="input_box">
+            <label><input type="text" value="홈스타파스텔OK플러스" /></label>
+            <button type="button">검색</button>
+        </div>
+        <div class="input_opts">
+            <div class="check_res"><label><input type="checkbox" /> 결과내 재검색</label></div>
+            <p class="text_res">
+                <em>총 <strong>10건</strong></em> 검색결과가 있습니다
+            </p>
+        </div>
+    </div>
+</div>
+<div class="wrap_search_word">
+    <div class="search_word">
+        <dl class="my_search">
+            <dt>나의 검색어</dt>
+            <dd class="word_list">
+                <span class="rbox">
+                    <a href="#">일이삼사오</a>
+                    <a href="#" class="del">삭제</a>
+                </span>
+                <span class="rbox">
+                    <a href="#">일이삼사오육칠팔구십</a>
+                    <a href="#" class="del">삭제</a>
+                </span>
+            </dd>
+        </dl>
+        <ul class="rank">
+            <li>
+                <span class="rankbox">
+                    <span class="number">1</span>
+                    <a href="#" class="text">일이삼사오</a>
+                    <span class="ico_new">new</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- //search -->
+
+<div class="wrap_list">
+    <div class="blist_sort">
+        <!-- 디자인이 없어 텍스트로 변경-->
+        <ul class="b_category">
+            <li class="on"><a href="#">All <em>(59)</em></a></li>
+            <li><a href="#">Sale <em>(10)</em></a></li>
+            <li><a href="#">Free <em>(5)</em></a></li>
+        </ul>
+        <!-- //디자인이 없어 텍스트로 변경-->
+        <div class="options">
+            <ul class="select_sort">
+                <li>
+                    <select>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                        <option>업체별보기</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option>4줄씩보기</option>
+                        <option>4줄씩보기</option>
+                        <option>4줄씩보기</option>
+                        <option>4줄씩보기</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="sub_sort">
+                <li class="on"><a href="#" class="s_def">기본형으로 보기</a></li>
+                <li><a href="#" class="s_thumb">썸네일 형태로 보기</a></li>
+                <li><a href="#" class="s_list">리스트 형태로 보기</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="item_sort">
+        <ul>
+            <li class="on"><a href="#">누적판매량순</a></li>
+            <li><a href="#">신상품순</a></li>
+            <li><a href="#">인기도순</a></li>
+            <li><a href="#">낮은가격순</a></li>
+            <li><a href="#">할인율순</a></li>
+            <li class="last"><a href="#">최근판매량순</a></li>
+        </ul>
+        <div class="alert">품절상품제외</div>
+    </div>
+    <div class="paging">
+        <a href="#" class="first">처음</a>
+        <a href="#" class="prev">이전</a>
+        <a href="#" class="on">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#" class="next">다음</a>
+        <a href="#" class="last">마지막</a>
+    </div>
+    <div class="query_text">
+        <p class="top"><em>해당검색어</em>를 찾을 수 없습니다.</p>
+        <p class="sub">단어의 철자가 정확안지 확인해주세요<br />띄어쓰기에 따라 상품이 검색되지 않을 수 있습니다</p>
+    </div>
+</div>
+</body>
+</html>
