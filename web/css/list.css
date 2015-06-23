@@ -1,0 +1,31 @@
+/*sort*/
+.blist_sort {float:left;width:1200px; height:50px; background-color:#fff; border-top:3px solid #444; border-bottom:1px solid #e3e3e3; margin-top:50px;}
+.blist_sort ul li {float:left; margin:5px 0 0 10px;}
+.blist_sort select {width:150px; height:20px; background:transparent; border:0px; font-size:12px; color:#7b7b7b;  margin:10px 0 0 0; background:url('../img/search/bg_arw_b.png') right no-repeat; background-size:6px 3px; -webkit-appearance:none; appearnace:none;  }
+.select_sort {float:left; margin:0 15px 0 0 }
+.sub_sort {float:left; margin:6px 10px 0 0}
+.b_category li{float:left;line-height:39px;overflow:hidden;font-size:15px;}
+.b_category li a{display:block;width:85px;text-align:center;color:#b5b5b5}
+.b_category li em{font-size:11px;color:#878787;}
+.b_category li.on a{color:#222;}
+.b_category li.on em{color:#dc1212;}
+.blist_sort .options{float:right;}
+.item_sort {overflow:hidden;position:relative;float:left;width:1200px; height:38px; background-color:#f5f5f5; border-bottom:1px solid #e3e3e3; margin-top:0px;}
+.item_sort ul li {float:left;padding:0 20px;line-height:38px; font-size:11px;background:url('../img/search/bg_bar1.png') right no-repeat;}
+.item_sort ul li.on a{color:#db0f0e;}
+.item_sort ul li a {color:#666}
+/*list*/
+.item_list{width:100%;overflow:hidden;border-bottom:1px solid #e5e5e5;margin-top:40px;}
+.item_list li{float:left;width:210px;font-size:11px;padding-bottom:35px;margin-left:37px;}
+.item_list li.first{margin-left:0;}
+.item_list .options{margin-top:24px;font-size:11px;}
+.item_list .options a.blank{color:#000;}
+.item_list .options a.review{background:none;}
+.item_list .options a.preview{position:absolute;top:0;right:0;width:30px;height:30px;text-indent:-9999px;padding:0;display:block;background:url(../img/search/bg_preview.png) no-repeat;}
+.item_list .options{position:relative;line-height:30px;background-color:#f5f5f5;color:#888;}
+.item_list .options a{padding:0 10px;background:url(../img/search/bg_bar2.png) right no-repeat;color:#888;}
+.item_list .box{padding:10px;color:#8d8d8d;font-size:11px;}
+.item_list .detail{display:inline-block;height:60px;line-height:15px;color:#8d8d8d;}
+.item_list .price{height:15px;font-size:11px;}
+.item_list .sale{font-weight:bold;color:#000;font-size:11px;}
+.item_list .sale em{color:#dc1210;}
